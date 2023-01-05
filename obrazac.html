@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrazac</title>
+    <style>
+      #obrazac {
+        background-color: rgb(83, 79, 79);
+        width: 400px;
+        height: 400px;
+        border-radius: 5px;
+      }
+      #obrazac2 {
+        background-color: rgb(83, 79, 79);
+        width: 400px;
+        height: 600px;
+        border-radius: 5px;
+      }
+      #prijava {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        padding-bottom: 50px;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      #sign a {
+        background-color: rgb(16, 113, 16);
+        color: white;
+
+        padding: 15px 50px;
+      }
+      #prijava a {
+        text-decoration: none;
+      }
+      #sign a:hover {
+        color: rgb(83, 79, 79);
+      }
+      #log a {
+        background-color: rgb(101, 101, 101);
+        color: white;
+
+        padding: 15px 50px;
+      }
+      #log a:hover {
+        color: rgb(83, 79, 79);
+      }
+
+      #fname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-right: 170px;
+        background-color: rgb(101, 101, 101);
+        border: 0;
+        color: white;
+      }
+      #name {
+        color: white;
+        padding: 0px 15px;
+      }
+      #pass {
+        color: white;
+        padding: 0px 12px;
+      }
+      #submit {
+        justify-content: center;
+        padding-top: 60px;
+        padding-left: 130px;
+      }
+      #submit a {
+        padding: 20px 50px;
+        background-color: rgb(16, 113, 16);
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+      }
+      #submit a:hover {
+        color: rgb(83, 79, 79);
+      }
+      #forma {
+        padding-top: 10px;
+        justify-content: center;
+        padding-left: 40px;
+      }
+      #razmak {
+        margin-top: 60px;
+        padding: 10px;
+        background-color: white;
+      }
+      #krug,
+      #kocka {
+        padding-top: 50px;
+        padding-left: 100px;
+        color: white;
+      }
+      #cars1 {
+        padding-top: 50px;
+        color: white;
+        padding-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="obrazac">
+      <div id="prijava">
+        <div id="sign">
+          <a href="#">Sign up</a>
+        </div>
+        <div id="log">
+          <a href="#">Log in</a>
+        </div>
+      </div>
+      <div id="forma">
+        <form>
+          <label id="name" fname="email">Email:</label>
+          <input type="text" id="fname" name="fname" value="" /><br />
+          <label id="pass" fname="email">Password:</label>
+          <input type="text" id="fname" name="fname" value="" />
+        </form>
+      </div>
+      <div id="submit">
+        <a href="#">Submit</a>
+      </div>
+      <div id="razmak"></div>
+    </div>
+    <div id="obrazac2">
+      <div id="forma">
+        <form>
+          <label id="name" fname="email">Ime i Prezime:</label>
+          <input type="text" id="fname" name="fname" value="" /><br />
+          <label id="pass" fname="email">Email:</label>
+          <input type="text" id="fname" name="fname" value="" />
+          <label id="name" fname="name">Poruka:</label>
+          <textarea
+            id="name"
+            name="name"
+            spellcheck="true"
+            rows="4"
+            cols="20"
+            tabindex="4"
+          ></textarea>
+        </form>
+      </div>
+      <form id="krug">
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+      </form>
+      <form id="kocka">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label>
+      </form>
+      <form id="cars1">
+        <label for="cars">Izaberi auto:</label>
+
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo XC90</option>
+          <option value="saab">Saab 95</option>
+          <option value="mercedes">Mercedes SLK</option>
+          <option value="audi">Audi TT</option>
+        </select>
+        <input type="submit" value="Potvrdi" />
+      </form>
+    </div>
+    <div id="razmak"></div>
+  </body>
+</html>
